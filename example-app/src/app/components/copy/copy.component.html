@@ -1,0 +1,14 @@
+<form id ="formLogin" [formGroup]="loginForm">
+<input type="text" id="title" placeholder = "press title"  formControlName="title" >
+<div><textarea formControlName="text" rows="8" cols="55"></textarea></div>
+
+<div><input type="password" placeholder="choose password" formControlName="password"></div>
+
+<button 
+                
+                type="submit"
+                (click)="save()"
+                >
+                send
+            </button>
+</form>
